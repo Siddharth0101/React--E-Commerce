@@ -6,7 +6,10 @@ const DisplayItems = (props) => {
       <Stack gap={1}>
         <div className="p-2">{props.title}</div>
         <div className="p-2">
-          <img src={props.image} />
+          <img
+            src={props.image}
+            style={{ maxWidth: "300px", maxHeight: "250px" }}
+          />
         </div>
         <div className="p-2">${props.price}</div>
         <div className="p-2">
